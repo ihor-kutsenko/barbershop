@@ -1,4 +1,4 @@
-root: {
+:root {
   --primary-font-family: "Open Sans", sans-serif;
   --secondary-font-family: "Raleway", sans-serif;
   --primary-text-color-dark-theme: #9da4bd;
@@ -9,3 +9,98 @@ root: {
   --accent-color: #ff6c00;
   --old-school-backgrond-color: #f7f7f7;
 }
+body {
+  font-family: var(--primary-font-family);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/*   START COMPONENTS */
+
+.modal-btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+  /* color: #FFFFFF; */
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color-dark-theme);
+}
+
+.social-links-list-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--secondary-text-color-light-theme);
+}
+
+.social-links-list-link:hover,
+.social-links-list-link:focus {
+  color: var(--accent-color);
+}
+
+.overtittle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.overtittle-dark-theme {
+  color: var(--third-text-color-dark-theme);
+}
+
+.overtitle-theme-light {
+  color: var(--secondary-text-color-light-theme);
+}
+
+.description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.description-theme-light {
+  color: var(--primary-text-color-light-theme);
+}
+
+.description-theme-dark {
+  color: var(--primary-text-color-dark-theme);
+}
+
+.title {
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.title-theme-light {
+  color: var(--secondary-text-color-light-theme);
+}
+
+.title-theme-dark {
+  /* color: var(--secondary-text-color-dark-theme); */
+}
+/*   END COMPONENTS */
+
+/*  START HEADER */
+
+/* END HEADER */
