@@ -103,4 +103,165 @@ body {
 
 /*  START HEADER */
 
+.nav-list-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  /* color: var(--secondary-text-color-dark-theme); */
+}
+
+.nav-list-link:hover,
+.nav-list-link:focus {
+  color: var(--accent-color);
+}
+
+.contact-number {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  /* color: var(--secondary-text-color-dark-theme); */
+}
+
+.contact-number:hover,
+.contact-number:focus {
+  color: var(--accent-color);
+}
+
 /* END HEADER */
+
+/* START HERO */
+
+.main-tittle {
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  /* color: var(--secondary-text-color-dark-theme); */
+}
+
+/* /END HERO */
+
+/* START ABOUT LIGHT THEME */
+
+.about-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-light-theme);
+}
+
+.btn-light-theme {
+  color: var(--secondary-text-color-light-theme);
+  background-color: var(--secondary-text-color-dark-theme);
+}
+
+/* /END ABOUT LIGHT THEME */
+
+/* START PRICES DARK THEME */
+.prices-list-name,
+.prices-list-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-dark-theme);
+}
+
+/* /END PRICES DARK THEME */
+
+/* START ADVANTAGES LIGHT THEME */
+
+.advantages-list-quantity {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--secondary-text-color-light-theme);
+}
+
+.advantages-list-description {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--secondary-text-color-light-theme);
+}
+
+.advantages-list-item {
+  background-color: var(--old-school-backgrond-color);
+}
+
+/* /END START ADVANTAGES LIGHT THEME */
+
+/* START EMPLOYEES */
+
+.employees-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color-light-theme);
+}
+
+.employees-position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+/*/ END  EMPLOYEES */
+
+/* START GALLERY */
+
+/* /END  GALLERY */
+
+/* START CONTACT DARK THEME */
+
+.contact-list-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-dark-theme);
+}
+
+.contact-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  /* color: var(--secondary-text-color-dark-theme); */
+}
+
+.contact-info-date {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-dark-theme);
+}
+
+/* /END  CONTACT DARK THEME */
+
+/* START FOOTER */
+
+.copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--primary-text-color-dark-theme);
+}
+
+/* /END FOOTER */
