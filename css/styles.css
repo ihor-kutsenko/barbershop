@@ -60,6 +60,12 @@ address {
 /*   START COMPONENTS */
 
 .modal-btn {
+  min-width: 160px;
+  padding: 10px 16px;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  background-color: transparent;
+
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -139,7 +145,31 @@ address {
 
 /*  START HEADER */
 
+.container-header {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  margin-right: 70px;
+  align-items: center;
+}
+.nav-list-item:not(:last-child) {
+  margin-right: 40px;
+}
 .nav-list-link {
+  padding-top: 48px;
+  padding-bottom: 48px;
+
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -153,6 +183,13 @@ address {
 }
 
 .contact-number {
+  display: flex;
+  margin-left: auto;
+  margin-right: 60px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  align-items: center;
+
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
