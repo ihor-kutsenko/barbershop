@@ -82,6 +82,11 @@ address {
   color: var(--secondary-text-color-dark-theme);
 }
 
+.btn-light-theme {
+  color: var(--secondary-text-color-light-theme);
+  background-color: var(--secondary-text-color-dark-theme);
+}
+
 .social-links-list {
   display: flex;
   align-items: center;
@@ -282,11 +287,6 @@ address {
   color: var(--primary-text-color-light-theme);
 }
 
-.btn-light-theme {
-  color: var(--secondary-text-color-light-theme);
-  background-color: var(--secondary-text-color-dark-theme);
-}
-
 /* /END ABOUT LIGHT THEME */
 
 /* START PRICES DARK THEME */
@@ -299,9 +299,56 @@ address {
   color: var(--primary-text-color-dark-theme);
 }
 
+.prices .overtitle-theme-dark {
+  margin-bottom: 20px;
+}
+
+.prices-container {
+  display: flex;
+}
+
+.prices-list {
+  flex-basis: 50%;
+  padding: 30px 40px;
+  margin-bottom: 50px;
+}
+
+.prices-list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prices-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.prices .modal-btn {
+  display: block;
+  margin: 0 auto;
+}
+
 /* /END PRICES DARK THEME */
 
 /* START ADVANTAGES LIGHT THEME */
+
+.advantages-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages-right-side,
+.advantages-left-side {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 370px;
+  margin: 0 auto;
+}
 
 .advantages-list-quantity {
   font-weight: 700;
@@ -310,6 +357,7 @@ address {
   text-align: center;
   letter-spacing: 0.05em;
   color: var(--secondary-text-color-light-theme);
+  margin-bottom: 6px;
 }
 
 .advantages-list-description {
@@ -322,6 +370,18 @@ address {
 
 .advantages-list-item {
   background-color: var(--old-school-backgrond-color);
+  width: 170px;
+  min-height: 133px;
+  padding: 21px;
+}
+
+.advantages-list-item:nth-child(even) {
+  margin-top: 30px;
+}
+
+.advantages-description,
+.advantages-right-side .title {
+  max-width: 460px;
 }
 
 /* /END START ADVANTAGES LIGHT THEME */
@@ -421,6 +481,28 @@ address {
   color: var(--primary-text-color-dark-theme);
 }
 
+.contact-info-section .title-theme-dark {
+  margin-bottom: 40px;
+}
+
+.contact-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.address .contact-text {
+  margin: 70px auto 20px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 50%;
+}
+
+.contact-info-section {
+  padding-left: 100px;
+}
+
 /* /END  CONTACT DARK THEME */
 
 /* START FOOTER */
@@ -431,6 +513,17 @@ address {
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: var(--primary-text-color-dark-theme);
+}
+
+.footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* /END FOOTER */
