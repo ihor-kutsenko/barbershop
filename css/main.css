@@ -9,6 +9,7 @@
   --accent-color: #ff6c00;
   --old-school-backgrond-color: #f7f7f7;
 }
+
 body {
   font-family: var(--primary-font-family);
 }
@@ -36,12 +37,18 @@ img {
 address {
   font-style: normal;
 }
+
 .link {
   text-decoration: none;
 }
 
 .list {
   list-style: none;
+}
+
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 
 .container {
@@ -52,20 +59,12 @@ address {
   margin-left: auto;
 }
 
-.section {
-  padding-top: 130px;
-  padding-bottom: 130px;
-}
-
-/*   START COMPONENTS */
-
 .modal-btn {
   min-width: 160px;
   padding: 10px 16px;
   border: 1px solid var(--accent-color);
   border-radius: 25px;
   background-color: transparent;
-
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -123,7 +122,6 @@ address {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -155,6 +153,14 @@ address {
   color: var(--secondary-text-color-light-theme);
 }
 
+.title {
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
 .title-theme-light {
   margin-bottom: 20px;
   color: var(--secondary-text-color-light-theme);
@@ -181,26 +187,16 @@ address {
   color: var(--primary-text-color-dark-theme);
 }
 
-.title {
-  font-family: var(--secondary-font-family);
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
-}
-
-/*   END COMPONENTS */
-
-/*  START HEADER */
-
 .container-header {
   display: flex;
   align-items: center;
 }
+
 .navigation {
   display: flex;
   align-items: center;
 }
+
 .nav-list {
   display: flex;
   align-items: center;
@@ -211,13 +207,14 @@ address {
   margin-right: 70px;
   align-items: center;
 }
+
 .nav-list-item:not(:last-child) {
   margin-right: 40px;
 }
+
 .nav-list-link {
   padding-top: 48px;
   padding-bottom: 48px;
-
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -237,7 +234,6 @@ address {
   padding-top: 48px;
   padding-bottom: 48px;
   align-items: center;
-
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -251,9 +247,6 @@ address {
   color: var(--accent-color);
 }
 
-/* END HEADER */
-
-/* START HERO */
 .hero-container {
   display: flex;
 }
@@ -263,11 +256,7 @@ address {
 }
 
 .hero-right-side {
-  background-image: linear-gradient(
-      rgba(25, 28, 38, 0.2),
-      rgba(25, 28, 38, 0.2)
-    ),
-    url("../img/hero-img.jpg");
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("../img/hero-img.jpg");
   background-size: cover;
   background-color: var(--secondary-text-color-light-theme);
   padding-top: 272px;
@@ -278,7 +267,6 @@ address {
 
 .main-title {
   margin-bottom: 20px;
-
   font-family: var(--secondary-font-family);
   font-style: normal;
   font-weight: 700;
@@ -288,14 +276,11 @@ address {
   color: var(--secondary-text-color-dark-theme);
 }
 
-/* /END HERO */
-
-/* START ABOUT LIGHT THEME */
-
 .about-container {
   display: flex;
   justify-content: space-between;
 }
+
 .about-left-side,
 .about-right-side {
   flex-basis: calc((100% - 30px) / 2);
@@ -312,7 +297,6 @@ address {
 
 .about-text {
   margin-bottom: 40px;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.86;
@@ -320,9 +304,6 @@ address {
   color: var(--primary-text-color-light-theme);
 }
 
-/* /END ABOUT LIGHT THEME */
-
-/* START PRICES DARK THEME */
 .prices-list-name,
 .prices-list-price {
   font-weight: 400;
@@ -359,10 +340,6 @@ address {
   display: block;
   margin: 0 auto;
 }
-
-/* /END PRICES DARK THEME */
-
-/* START ADVANTAGES LIGHT THEME */
 
 .advantages-container {
   display: flex;
@@ -417,10 +394,6 @@ address {
   max-width: 460px;
 }
 
-/* /END START ADVANTAGES LIGHT THEME */
-
-/* START EMPLOYEES */
-
 .employees-section .title {
   margin-bottom: 44px;
 }
@@ -464,9 +437,6 @@ address {
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
-/*/ END  EMPLOYEES */
-
-/* START GALLERY */
 
 .gallery .overtitle-theme-light {
   margin-bottom: 44px;
@@ -484,10 +454,6 @@ address {
   margin-left: 30px;
   flex-basis: calc((100% - 120px) / 4);
 }
-
-/* /END  GALLERY */
-
-/* START CONTACT DARK THEME */
 
 .contact-list-link {
   font-weight: 400;
@@ -536,10 +502,6 @@ address {
   padding-left: 100px;
 }
 
-/* /END  CONTACT DARK THEME */
-
-/* START FOOTER */
-
 .copyright {
   font-weight: 600;
   font-size: 11px;
@@ -558,5 +520,4 @@ address {
   align-items: center;
   justify-content: space-between;
 }
-
-/* /END FOOTER */
+/*# sourceMappingURL=main.css.map */

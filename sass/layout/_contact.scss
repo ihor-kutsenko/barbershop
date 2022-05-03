@@ -1,0 +1,46 @@
+.contact-list-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-dark-theme);
+}
+
+.contact-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  /* color: var(--secondary-text-color-dark-theme); */
+}
+
+.contact-info-date {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-dark-theme);
+}
+
+.contact-info-section .title-theme-dark {
+  margin-bottom: 40px;
+}
+
+.contact-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.address .contact-text {
+  margin: 70px auto 20px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 50%;
+}
+
+.contact-info-section {
+  padding-left: 100px;
+}
