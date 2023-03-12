@@ -22,7 +22,7 @@
 }
 
 .overtitle-theme-dark::before {
-  background-color: rgba(157, 164, 189, 0.6);
+  background-color: var(--third-text-color-dark-theme);
 }
 
 .overtitle-theme-light::before {

@@ -72,7 +72,7 @@ address {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   cursor: pointer;
-  /* color: #FFFFFF; */
+  color: #ffffff;
 }
 
 .modal-btn:hover,
@@ -141,7 +141,7 @@ address {
 }
 
 .overtitle-theme-dark::before {
-  background-color: rgba(157, 164, 189, 0.6);
+  background-color: var(--third-text-color-dark-theme);
 }
 
 .overtitle-theme-light::before {
@@ -168,7 +168,7 @@ address {
 
 .title-theme-dark {
   margin-bottom: 44px;
-  /* color: var(--secondary-text-color-dark-theme); */
+  color: var(--secondary-text-color-dark-theme);
 }
 
 .description {
@@ -256,7 +256,7 @@ address {
 }
 
 .hero-right-side {
-  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("../img/hero-img.jpg");
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("../../img/hero/hero-img.jpg");
   background-size: cover;
   background-color: var(--secondary-text-color-light-theme);
   padding-top: 272px;
@@ -304,13 +304,10 @@ address {
   color: var(--primary-text-color-light-theme);
 }
 
-.prices-list-name,
-.prices-list-price {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color-dark-theme);
+.prices {
+  background-image: url(../../img/prices/bg.png);
+  background-size: cover;
+  background-color: #111319;
 }
 
 .prices .overtitle-theme-dark {
@@ -327,6 +324,14 @@ address {
   margin-bottom: 50px;
 }
 
+.prices-list:first-child {
+  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.prices-list:last-child {
+  background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
 .prices-list-item {
   display: flex;
   justify-content: space-between;
@@ -334,6 +339,15 @@ address {
 
 .prices-list-item:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.prices-list-name,
+.prices-list-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-dark-theme);
 }
 
 .prices .modal-btn {
@@ -420,22 +434,53 @@ address {
 }
 
 .employees-name {
+  margin-bottom: 8px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.39;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color-light-theme);
-  margin-bottom: 8px;
 }
 
 .employees-position {
+  margin-bottom: 30px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: var(--secondary-text-color-dark-theme);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--secondary-text-color-light-theme);
+}
+
+.social-list-icon {
+  fill: var(--secondary-text-color-light-theme);
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--accent-color);
 }
 
 .gallery .overtitle-theme-light {
@@ -455,7 +500,45 @@ address {
   flex-basis: calc((100% - 120px) / 4);
 }
 
+.contact {
+  background-color: #303030;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 50%;
+}
+
+.contact-info-section .title-theme-dark {
+  margin-bottom: 40px;
+}
+
+.contact-info-section {
+  padding-left: 100px;
+}
+
+.contact-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-list-item {
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-list-icon {
+  margin-right: 16px;
+}
+
 .contact-list-link {
+  display: flex;
+  align-items: center;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
@@ -463,13 +546,18 @@ address {
   color: var(--primary-text-color-dark-theme);
 }
 
+.contact-list-link:hover,
+.contact-list-link:focus {
+  color: var(--accent-color);
+}
+
+.contact-list-link:hover .contact-list-icon,
+.contact-list-link:focus .contact-list-icon {
+  fill: var(--accent-color);
+}
+
 .contact-text {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  /* color: var(--secondary-text-color-dark-theme); */
+  color: var(--secondary-text-color-dark-theme);
 }
 
 .contact-info-date {
@@ -480,26 +568,8 @@ address {
   color: var(--primary-text-color-dark-theme);
 }
 
-.contact-info-section .title-theme-dark {
-  margin-bottom: 40px;
-}
-
-.contact-list-item:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-.address .contact-text {
+.contact-info-section .contact-text {
   margin: 70px auto 20px;
-}
-
-.contact-container {
-  display: flex;
-  justify-content: space-between;
-  flex-basis: 50%;
-}
-
-.contact-info-section {
-  padding-left: 100px;
 }
 
 .copyright {
@@ -519,5 +589,4 @@ address {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
