@@ -1,3 +1,11 @@
+.page-header {
+  position: absolute;
+  width: 100%;
+
+  // padding-top: 32px;
+  // padding-bottom: 32px;
+}
+
 .container-header {
   display: flex;
   align-items: center;
@@ -27,7 +35,9 @@
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
-  /* color: var(--secondary-text-color-dark-theme); */
+  color: var(--secondary-text-color-dark-theme);
+
+  transition: color 250ms linear;
 }
 
 .nav-list-link:hover,
@@ -48,7 +58,9 @@
   line-height: 1.33;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  /* color: var(--secondary-text-color-dark-theme); */
+  color: var(--secondary-text-color-dark-theme);
+
+  transition: color 250ms linear;
 }
 
 .contact-number:hover,
