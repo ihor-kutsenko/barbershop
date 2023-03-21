@@ -412,7 +412,7 @@
           <p class="overtitle overtitle-theme-light">
             На латинском языке “барба” означает “борода”
           </p>
-          <h2 hidden>галерея</h2>
+          <h2 class="visually-hidden">галерея</h2>
           <ul class="gallery-list list">
             <li class="gallery-list-item">
               <img
@@ -458,15 +458,52 @@
 
       <!-- START CONTACT DARK THEME -->
 
-      <div class="contact section">
+      <div class="contact">
         <!-- CONTACT -->
         <div class="container contact-container">
-          <section class="contact-form-section">
+          <section class="contact-form-section section">
             <h2 class="title title-theme-dark">Онлайн-запись</h2>
-            <button class="modal-btn" type="button">отправить</button>
+            <form class="contact-form">
+              <label class="contact-form-field">
+                <span class="contact-form-input-wrapper">
+                  <input
+                    name="user_name"
+                    type="text"
+                    class="contact-form-input"
+                    placeholder="Имя*"
+                    required
+                  />
+                  <span class="contact-form-icon"></span>
+                </span>
+              </label>
+              <label class="contact-form-field">
+                <span class="contact-form-input-wrapper">
+                  <input
+                    name="user_phone"
+                    type="tel"
+                    class="contact-form-input"
+                    placeholder="Телефон*"
+                    required
+                  />
+                  <span class="contact-form-icon"></span>
+                </span>
+              </label>
+              <label class="contact-form-field">
+                <span class="contact-form-input-wrapper">
+                  <textarea
+                    name="user_message"
+                    class="contact-form-message"
+                    placeholder="Сообщение"
+                  ></textarea>
+                  <span class="contact-form-icon"></span>
+                </span>
+              </label>
+
+              <button class="modal-btn" type="submit">отправить</button>
+            </form>
           </section>
           <!-- CONTACT INFORMATION -->
-          <section class="contact-info-section" id="contacts">
+          <section class="contact-info-section section" id="contacts">
             <h2 class="title title-theme-dark">Контакты</h2>
             <address class="address">
               <ul class="contact-list list">
@@ -548,6 +585,66 @@
             <use href="./img/sprite.svg#close-icon"></use>
           </svg>
         </button>
+        <form class="contact-form-header">
+          <label class="contact-form-field-header">
+            Имя*
+            <span class="contact-form-input-wrapper-header">
+              <input
+                name="user_name"
+                class="contact-form-input-header"
+                type="text"
+                required
+              />
+              <span class="contact-form-icon-header"></span>
+            </span>
+          </label>
+
+          <label class="contact-form-field-header">
+            Телефон*
+            <span class="contact-form-input-wrapper-header">
+              <input
+                name="user_phone"
+                class="contact-form-input-header"
+                type="tel"
+                required
+              />
+              <span class="contact-form-icon-header"></span>
+            </span>
+          </label>
+
+          <label class="contact-form-field-header">
+            Сообщение
+            <textarea
+              name="user_message"
+              class="contact-form-message-header"
+              placeholder="Сообщение"
+            ></textarea>
+          </label>
+
+          <div class="contact-form-checkbox-wrapper-header">
+            <input
+              name="accept-policy"
+              type="checkbox"
+              class="contact-form-checkbox-header visually-hidden"
+              id="policy-checkbox"
+              required
+            />
+            <label
+              for="policy-checkbox"
+              class="contact-form-checkbox-label-header"
+            >
+              Соглашаюсь с рассылкой и принимаю&nbsp;
+              <a href="">Условия договора</a>
+            </label>
+          </div>
+
+          <button
+            class="contact-form-button-btn-header modal-btn btn-light-theme"
+            type="submit"
+          >
+            Отправить
+          </button>
+        </form>
       </div>
     </div>
 
