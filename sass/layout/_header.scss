@@ -1,9 +1,6 @@
 .page-header {
   position: absolute;
   width: 100%;
-
-  // padding-top: 32px;
-  // padding-bottom: 32px;
 }
 
 .container-header {
@@ -24,10 +21,10 @@
   margin-right: 70px;
   align-items: center;
 }
-.nav-list-item:not(:last-child) {
+.nav-list__item:not(:last-child) {
   margin-right: 40px;
 }
-.nav-list-link {
+.nav-list__link {
   padding-top: 48px;
   padding-bottom: 48px;
 
@@ -40,8 +37,8 @@
   transition: color 250ms linear;
 }
 
-.nav-list-link:hover,
-.nav-list-link:focus {
+.nav-list__link:hover,
+.nav-list__link:focus {
   color: var(--accent-color);
 }
 

@@ -17,7 +17,7 @@
   margin: 0 auto;
 }
 
-.advantages-list-quantity {
+.advantages-list__quantity {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
@@ -27,7 +27,7 @@
   margin-bottom: 6px;
 }
 
-.advantages-list-description {
+.advantages-list__description {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -35,18 +35,18 @@
   color: var(--secondary-text-color-light-theme);
 }
 
-.advantages-list-item {
+.advantages-list__item {
   background-color: var(--old-school-backgrond-color);
   width: 170px;
   min-height: 133px;
   padding: 21px;
 }
 
-.advantages-list-item:nth-child(even) {
+.advantages-list__item:nth-child(even) {
   margin-top: 30px;
 }
 
-.advantages-description,
+.advantages__description,
 .advantages-right-side .title {
   max-width: 460px;
 }
