@@ -1,9 +1,9 @@
-.employees-section .title {
-  margin-bottom: 44px;
-}
-
 .employees-section {
   background-color: var(--old-school-backgrond-color);
+
+  & .title {
+    margin-bottom: 44px;
+  }
 }
 
 .employees__list {

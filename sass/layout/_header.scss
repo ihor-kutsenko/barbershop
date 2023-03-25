@@ -24,6 +24,7 @@
 .nav-list__item:not(:last-child) {
   margin-right: 40px;
 }
+
 .nav-list__link {
   padding-top: 48px;
   padding-bottom: 48px;
@@ -35,11 +36,11 @@
   color: var(--secondary-text-color-dark-theme);
 
   transition: color 250ms linear;
-}
 
-.nav-list__link:hover,
-.nav-list__link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .contact-number {
@@ -58,9 +59,9 @@
   color: var(--secondary-text-color-dark-theme);
 
   transition: color 250ms linear;
-}
 
-.contact-number:hover,
-.contact-number:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }

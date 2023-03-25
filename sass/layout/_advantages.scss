@@ -40,10 +40,10 @@
   width: 170px;
   min-height: 133px;
   padding: 21px;
-}
 
-.advantages-list__item:nth-child(even) {
-  margin-top: 30px;
+  &:nth-child(even) {
+    margin-top: 30px;
+  }
 }
 
 .advantages__description,
