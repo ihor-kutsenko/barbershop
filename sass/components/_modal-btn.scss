@@ -27,3 +27,9 @@
   color: var(--secondary-text-color-light-theme);
   background-color: var(--secondary-text-color-dark-theme);
 }
+
+@media screen and (max-width: 1199px) {
+  .header__modal-btn {
+    margin-bottom: 20px;
+  }
+}
