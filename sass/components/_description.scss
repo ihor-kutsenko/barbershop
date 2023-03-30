@@ -1,9 +1,10 @@
 .description {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
+  font-size: 16px;
+  line-height: 1.6;
   letter-spacing: 0.02em;
   margin-bottom: 20px;
+  width: 306px;
 }
 
 .description_theme_light {
@@ -12,4 +13,25 @@
 
 .description_theme_dark {
   color: var(--primary-text-color-dark-theme);
+}
+
+.hero-right-side .description {
+  margin-bottom: 0;
+}
+
+// tablet 768px+
+
+@media screen and (min-width: 768px) {
+  .description {
+    width: 349px;
+  }
+}
+// destkop 1200px+
+
+@media screen and (min-width: 1200px) {
+  .description {
+    font-size: 18px;
+    line-height: 1.67;
+    width: 400px;
+  }
 }
