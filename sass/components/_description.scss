@@ -4,7 +4,6 @@
   line-height: 1.6;
   letter-spacing: 0.02em;
   margin-bottom: 20px;
-  width: 306px;
 }
 
 .description_theme_light {
@@ -17,12 +16,13 @@
 
 .hero-right-side .description {
   margin-bottom: 0;
+  width: 306px;
 }
 
 // tablet 768px+
 
 @media screen and (min-width: 768px) {
-  .description {
+  .hero-right-side .description {
     width: 349px;
   }
 }

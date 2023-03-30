@@ -1,8 +1,8 @@
 .title {
   font-family: var(--secondary-font-family);
   font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.05em;
 }
 .title_theme_light {
@@ -13,4 +13,13 @@
 .title_theme_dark {
   margin-bottom: 44px;
   color: var(--secondary-text-color-dark-theme);
+}
+
+// destkop 1200px+
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 42px;
+    line-height: 1.17;
+  }
 }

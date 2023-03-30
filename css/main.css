@@ -66,7 +66,7 @@ address {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 448px;
+    width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -330,8 +330,8 @@ address {
 .title {
   font-family: var(--secondary-font-family);
   font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.05em;
 }
 
@@ -345,13 +345,18 @@ address {
   color: var(--secondary-text-color-dark-theme);
 }
 
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 42px;
+    line-height: 1.17;
+  }
+}
 .description {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.02em;
   margin-bottom: 20px;
-  width: 306px;
 }
 
 .description_theme_light {
@@ -364,10 +369,11 @@ address {
 
 .hero-right-side .description {
   margin-bottom: 0;
+  width: 306px;
 }
 
 @media screen and (min-width: 768px) {
-  .description {
+  .hero-right-side .description {
     width: 349px;
   }
 }
@@ -709,25 +715,6 @@ address {
     line-height: 1.18;
   }
 }
-.about-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.about-left-side,
-.about-right-side {
-  flex-basis: calc((100% - 30px) / 2);
-}
-
-.about-right-side {
-  padding-left: 34px;
-}
-
-.about-gallery__list {
-  display: flex;
-  justify-content: space-between;
-}
-
 .about__text {
   margin-bottom: 40px;
   font-weight: 400;
@@ -737,6 +724,39 @@ address {
   color: var(--primary-text-color-light-theme);
 }
 
+@media screen and (max-width: 1199px) {
+  .about-gallery__item:first-child {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about-right-side {
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+  .about-left-side {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about-right-side {
+    padding-left: 34px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-left-side,
+  .about-right-side {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .about-gallery__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .prices {
   background-image: url(../img/prices/bg.png);
   background-size: cover;
