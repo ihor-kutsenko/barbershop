@@ -345,6 +345,11 @@ address {
   color: var(--secondary-text-color-dark-theme);
 }
 
+.prices .title {
+  font-size: 42px;
+  line-height: 1.17;
+}
+
 @media screen and (min-width: 1200px) {
   .title {
     font-size: 42px;
@@ -766,35 +771,16 @@ address {
   margin-bottom: 20px;
 }
 
-.prices-container {
-  display: flex;
-}
-
-.prices-list {
-  flex-basis: 50%;
-  padding: 30px 40px;
-  margin-bottom: 50px;
-}
-.prices-list:first-child {
-  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
-}
-.prices-list:last-child {
-  background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
-}
-
 .prices-list__item {
   display: flex;
   justify-content: space-between;
-}
-.prices-list__item:not(:last-child) {
-  margin-bottom: 20px;
 }
 
 .prices-list__name,
 .prices-list__price {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
+  font-size: 14px;
+  line-height: 2.1;
   letter-spacing: 0.02em;
   color: var(--primary-text-color-dark-theme);
 }
@@ -804,6 +790,53 @@ address {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1199px) {
+  .prices-container {
+    margin-bottom: 50px;
+    background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+  .prices-list__item {
+    margin-bottom: 20px;
+  }
+  .prices-list__last-item {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .prices-container {
+    padding: 30px 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .prices-container {
+    padding: 30px 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .prices-list__name,
+  .prices-list__price {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .prices-container {
+    display: flex;
+  }
+  .prices-list {
+    flex-basis: 50%;
+    padding: 30px 40px;
+  }
+  .prices-list:first-child {
+    background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+  .prices-list:last-child {
+    background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  }
+  .prices-list__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
 .advantages-container {
   display: flex;
   justify-content: space-between;
