@@ -912,19 +912,6 @@ address {
   margin-bottom: 44px;
 }
 
-.employees__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
-}
-
-.employees__card {
-  margin-top: 30px;
-  margin-left: 30px;
-  flex-basis: calc((100% - 90px) / 3);
-}
-
 .employees-container {
   padding-top: 30px;
 }
@@ -949,6 +936,34 @@ address {
   color: var(--accent-color);
 }
 
+@media screen and (max-width: 1279px) {
+  .employees__card:not(:last-child) {
+    margin-bottom: 64px;
+  }
+  .employees__photo {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .employees__photo {
+    width: 418px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .employees__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .employees__card {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 90px) / 3);
+  }
+}
 .gallery .overtitle_theme_light {
   margin-bottom: 44px;
 }
