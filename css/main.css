@@ -1201,12 +1201,30 @@ address {
 }
 
 .footer {
-  padding-top: 56px;
-  padding-bottom: 56px;
+  padding-top: 44px;
+  padding-bottom: 44px;
 }
 
 .footer-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-container {
+    align-items: start;
+  }
+  .copyright {
+    margin-top: 35px;
+    margin-right: 21px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+  .footer-container {
+    align-items: center;
+    justify-content: space-between;
+  }
 }/*# sourceMappingURL=main.css.map */

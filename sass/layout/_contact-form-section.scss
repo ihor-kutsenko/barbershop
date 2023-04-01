@@ -1,10 +1,6 @@
 .contact-form__field {
   display: inline-block;
   margin-bottom: 44px;
-
-  // &:first-child {
-  //   margin-right: 30px;
-  // }
 }
 
 .contact-form__input,
@@ -71,11 +67,6 @@
   }
 }
 
-// 0 - 1199px
-
-@media screen and (max-width: 1279px) {
-}
-
 // 0 - 767px
 
 @media screen and (max-width: 767px) {
@@ -87,11 +78,6 @@
     margin-right: auto;
     margin-left: auto;
   }
-}
-
-// mobile 480+
-
-@media screen and (min-width: 480px) {
 }
 
 // tablet 768+
@@ -127,17 +113,3 @@
     width: 545px;
   }
 }
-// ---------------------------------------------------------
-// .contact-form-section {
-//   width: 50%;
-//   padding-right: 40px;
-// }
-
-// .contact-form__field {
-//   display: inline-block;
-//   margin-bottom: 44px;
-
-//   &:first-child {
-//     margin-right: 30px;
-//   }
-// }
