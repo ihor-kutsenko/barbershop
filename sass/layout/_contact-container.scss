@@ -2,10 +2,42 @@
   background-color: #191c26;
   background-image: url(../img/contacts/bg1.png);
   background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 50% auto;
+  background-position: bottom;
+  background-size: auto 50%;
 }
 
-.contact-container {
-  display: flex;
+// 0 - 1199px
+
+@media screen and (max-width: 1279px) {
+}
+
+// 0 - 767px
+
+@media screen and (max-width: 767px) {
+}
+
+// mobile 480+
+
+@media screen and (min-width: 480px) {
+}
+
+// tablet 768+
+
+@media screen and (min-width: 768px) {
+  .contact {
+    background-size: 100% 50%;
+  }
+}
+
+// destcop 1200+
+
+@media screen and (min-width: 1280px) {
+  .contact-container {
+    display: flex;
+  }
+
+  .contact {
+    background-position: right center;
+    background-size: 50% auto;
+  }
 }
