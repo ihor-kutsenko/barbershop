@@ -1,10 +1,18 @@
 .prices {
-  background-image: url(../img/prices/bg.png);
+  background-image: url(../img/prices/bg-mobile.png);
   background-size: cover;
   background-color: #111319;
 
   & .overtitle_theme_dark {
     margin-bottom: 20px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .prices {
+    background-image: url(../img/prices/bg-mobile@2x.png);
   }
 }
 
@@ -57,14 +65,21 @@
   }
 }
 
-// mobile 480+
-
-@media screen and (min-width: 480px) {
-}
-
 // tablet 768+
 
 @media screen and (min-width: 768px) {
+  .prices {
+    background-image: url(../img/prices/bg-tablet@2x.png);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .prices {
+      background-image: url(../img/prices/bg-tablet@2x.png);
+    }
+  }
+
   .prices-list__name,
   .prices-list__price {
     font-size: 18px;
@@ -78,6 +93,18 @@
   .prices-container {
     display: flex;
     margin-bottom: 50px;
+  }
+
+  .prices {
+    background-image: url(../img/prices/bg-desktop@2x.png);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .prices {
+      background-image: url(../img/prices/bg-desktop@2x.png);
+    }
   }
 
   .prices-list {
