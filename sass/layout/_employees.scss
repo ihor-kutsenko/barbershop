@@ -39,21 +39,15 @@
     margin-bottom: 64px;
   }
 
-  .employees__photo {
-    width: 450px;
-    margin-left: auto;
-    margin-right: auto;
-    // late delete------------------------------------------------
-  }
+  // .employees__photo {
+  //   margin-left: auto;
+  //   margin-right: auto;
+  // }
 }
 
 // 0 - 767px
 
 @media screen and (max-width: 767px) {
-  .employees__photo {
-    width: 418px;
-    // late delete------------------------------------------------
-  }
 }
 
 // mobile 480+

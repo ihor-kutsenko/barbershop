@@ -45,6 +45,8 @@ ol {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 address {
@@ -756,6 +758,9 @@ button {
     font-size: 28px;
     line-height: 1.18;
   }
+  .about-gallery__list {
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 767px) {
   .about-left-side {
@@ -767,18 +772,18 @@ button {
     display: flex;
     justify-content: space-between;
   }
-  .about-right-side {
-    padding-left: 34px;
-  }
-}
-@media screen and (min-width: 1280px) {
   .about-left-side,
   .about-right-side {
     flex-basis: calc((100% - 30px) / 2);
   }
+}
+@media screen and (min-width: 1280px) {
   .about-gallery__list {
     display: flex;
     justify-content: space-between;
+  }
+  .about-right-side {
+    padding-left: 34px;
   }
 }
 .prices {
@@ -993,16 +998,6 @@ button {
 @media screen and (max-width: 1279px) {
   .employees__card:not(:last-child) {
     margin-bottom: 64px;
-  }
-  .employees__photo {
-    width: 450px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media screen and (max-width: 767px) {
-  .employees__photo {
-    width: 418px;
   }
 }
 @media screen and (min-width: 1280px) {
